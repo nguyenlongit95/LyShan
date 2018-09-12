@@ -1,3 +1,161 @@
-/*
-* Code CSS cho website tại đây
-*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+img.img-head {
+    position: absolute;
+    top: 0;
+}
+.header {
+    text-align: center;
+    margin-top: 2em;
+}
+/* logo */
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+.logo h1 a {
+    text-decoration: none;
+    color: #000;
+}
+.logo h1 b {
+    font-size: 8px;
+    background: #ED0612;
+    font-weight: normal;
+    padding: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    color: #fff;
+    line-height: 8px;
+}
+.logo h1 span {
+    font-size: 12px;
+    display: block;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 4px;
+}
+/* end logo */
+
+/* head-t */
+.head-t {
+    margin: 1em 0;
+}
+.card li {
+    display: inline-block;
+}
+.card li a {
+    display: inline-block;
+    color: #999;
+    font-size: 0.9em;
+    margin: 0 0.5em;
+}
+.card li a i {
+    margin-right: 5px;
+    color: #FAB005;
+}
+/* end head-t */
+
+/* head-ri */
+.social-top li {
+    display: inline-block;
+}
+.icon {
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    height: 35px;
+    line-height: 37px;
+    margin: 0 2px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    width: 35px;
+}
+.icon .fa-facebook {
+    color: #3B5998;
+}
+.facebook span {
+    background-color: #3B5998;
+}
+.icon .fa-twitter {
+    color: #4099ff;
+}
+.twitter span {
+    background-color: #4099ff;
+}
+.icon .fa-pinterest-p {
+    color: #CB2028;
+}
+.pinterest span {
+    background-color: #CB2028;
+}
+.icon .fa-dribbble {
+    color: #E04D84;
+}
+.dribbble span {
+    background-color: #E04D84;
+}
+.icon span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+.icon i {
+    background: none;
+    color: #000;
+    height: 35px;
+    left: 0;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 35px;
+    z-index: 10;
+}
+/* end head-ri */
+
+/* nav-top */
+
+/* end nav-top */
+
+/* cart */
+.cart {
+    float: right;
+    cursor: pointer;
+    margin-top: 11px;
+    width: 9%;
+}
+span.fa.fa-shopping-cart.my-cart-icon {
+    position: absolute !important;
+    font-size: 1.5em;
+    color: #039445;
+}
+/* end cart */
