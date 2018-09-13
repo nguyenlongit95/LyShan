@@ -1,3 +1,4 @@
+/* index.html */
 ul {
     margin: 0;
     padding: 0;
@@ -672,7 +673,11 @@ p, label {
 /* end pagination */
 
 /* carousel */
+.carousel-inner{
+    padding-bottom: 4em;
+}
 .carousel-indicators {
+    padding-bottom: 5em;
     position: absolute;
     bottom: -45px;
     left: 48%;
@@ -703,7 +708,7 @@ p, label {
 /* footer */
 .footer {
     background: #353535;
-    margin-top: 6em;
+    /* margin-top: 6em; */
     padding-top: 3em;
     padding-bottom: 1em;
 }
@@ -812,3 +817,146 @@ p.fo-para {
     background: url(../images/arr.png) no-repeat 0px 0px;
 }
 /* end footer */
+
+
+/* login modal popup*/
+.modal-header h4{
+    color: #029241;
+    font-size: 30px;
+    font-weight: 550;
+}
+.main-agileits {
+    background-color: #f5f5cb;
+    width: 92%;
+    margin: 0em auto;
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    padding: 3em 4em 2em 4em;
+}
+.key {
+    background: #fff;
+    border: 1px solid #999;
+    margin-bottom: 2em;
+}
+.key i {
+    float: left;
+    color: #999;
+    font-size: 1.1em;
+    padding: 13px;
+}
+.key input[type="text"], .key input[type="password"] {
+    width: 89%;
+    padding: 10px 10px;
+    font-size: 1em;
+    border: none;
+    border-bottom: none;
+    outline: none;
+    color: #999;
+    float: left;
+    background: none;
+}
+.form-w3agile input[type="submit"] {
+    background: #fdb515;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    width: 32%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.forg a {
+    text-decoration: none;
+    color: #029241;
+    font-size: 1em;
+}
+.forg a:hover{
+    color: #fdb515;
+}
+.forg-left {
+    float: left;
+}
+.forg-right {
+    float: right;
+}
+
+/* Register.html */
+.banner-top {
+    text-align: center;
+    width: 100%;
+    height: 114px;
+    display: block;
+    background: url(../images/sh.jpg)no-repeat;
+    padding: 3em 0;
+    background-size: cover;
+}
+.banner-top h3 {
+    font-size: 2.5em;
+    color: #fff;
+    float: left;
+    font-weight: 700;
+}
+.banner-top h4 {
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 1em;
+    float: right;
+}
+.banner-top h4 a {
+    color: #FAB005;
+}
+.banner-top h4 a:hover {
+    font-size: 16px;
+}
+.banner-top h4 label {
+    margin: 0 0.4em;
+}
+.main-agileits-r {
+    background-color: #f5f5cb;
+    width: 50%;
+    margin: 1em auto;
+    box-shadow: 0px 0px 15px 0px #D6D6D6;
+    padding: 3em 4em 2em 4em;
+}
+.main-agileits-r h3 {
+    text-align: center;
+    font-weight: 700;
+    color: #029241;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+.key-r {
+    background: #fff;
+    border: 1px solid #999;
+    margin-bottom: 2em;
+}
+.key-r i {
+    float: left;
+    color: #999;
+    font-size: 1.1em;
+    padding: 13px;
+}
+.key-r input[type="text"], .key-r input[type="password"] {
+    width: 89%;
+    padding: 10px 10px;
+    font-size: 1em;
+    border: none;
+    border-bottom: none;
+    outline: none;
+    color: #999;
+    float: left;
+    background: none;
+}
+.form-w3agile-r input[type="submit"] {
+    margin-left: 42%;
+    background: #fdb515;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    width: 20%;
+    cursor: pointer;
+}

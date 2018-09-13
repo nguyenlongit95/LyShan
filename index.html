@@ -62,7 +62,47 @@
       <div class="head-t">
         <ul class="card">
           <li><a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist</a></li>
-          <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="main-agileits">
+                  <div class="form-w3agile">
+                    <form action="#" method="post">
+                      <div class="key">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
+                          required="">
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="key">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+                          required="">
+                        <div class="clearfix"></div>
+                      </div>
+                      <input type="submit" value="Login">
+                    </form>
+                  </div>
+                  <div class="forg">
+                    <a href="#" class="forg-left">Forgot Password?</a>
+                    <a href="register.html" class="forg-right">Register</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <li><a href="register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
           <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a></li>
           <li><a href="shipping.html"><i class="fa fa-ship" aria-hidden="true"></i>Shipping</a></li>
@@ -91,7 +131,7 @@
 
           <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
             <ul class="nav navbar-nav ">
-              <li class=" active"><a href="index.html" class="hyper "><span>Home</span></a></li>
+              <li class=" active"><a href="index.html" class="hyper "><span class="glyphicon glyphicon-home"></span>  Home</a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown"><span>Kitchen<b class="caret"></b></span></a>
                 <ul class="dropdown-menu multi">
@@ -99,8 +139,10 @@
 
                     <div class="col-sm-3">
                       <ul class="multi-column-dropdown">
-                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Water & Beverages</a></li>
-                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Fruits & Vegetables</a></li>
+                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Water &
+                            Beverages</a></li>
+                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Fruits &
+                            Vegetables</a></li>
                         <li><a href="kitchen.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Staples</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Branded Food</a></li>
                       </ul>
@@ -108,16 +150,19 @@
 
                     <div class="col-sm-3">
                       <ul class="multi-column-dropdown">
-                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Breakfast &amp; Cereal</a></li>
+                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Breakfast &amp;
+                            Cereal</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Snacks</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Spices</a></li>
-                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Biscuit &amp; Cookie</a></li>
+                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Biscuit &amp;
+                            Cookie</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sweets</a></li>
                       </ul>
                     </div>
                     <div class="col-sm-3">
                       <ul class="multi-column-dropdown">
-                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pickle & Condiment</a></li>
+                        <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pickle &
+                            Condiment</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Instant Food</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Dry Fruit</a></li>
                         <li><a href="kitchen.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Tea &amp; Coffee</a></li>
@@ -154,7 +199,8 @@
                     </div>
                     <div class="col-sm-3">
                       <ul class="multi-column-dropdown">
-                        <li><a href="care.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Fashion Accessories
+                        <li><a href="care.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Fashion
+                            Accessories
                           </a></li>
                         <li><a href="care.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Grooming Tools</a></li>
                         <li><a href="care.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Shaving Need</a></li>
@@ -175,7 +221,8 @@
 
                     <div class="col-sm-3">
                       <ul class="multi-column-dropdown">
-                        <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cleaning Accessories</a></li>
+                        <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cleaning
+                            Accessories</a></li>
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>CookWear</a></li>
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Detergents</a></li>
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Gardening Needs</a></li>
@@ -195,7 +242,8 @@
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pooja Needs</a></li>
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Serveware</a></li>
                         <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Safety Accessories</a></li>
-                        <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Festive Decoratives </a></li>
+                        <li><a href="hold.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Festive Decoratives
+                          </a></li>
                       </ul>
                     </div>
                     <div class="col-sm-3 w3l">
@@ -280,8 +328,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b " data-id="1" data-name="Moong" data-summary="summary 1" data-price="1.50"
-                        data-quantity="1" data-image="images/of.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b " data-id="1" data-name="Moong" data-summary="summary 1"
+                        data-price="1.50" data-quantity="1" data-image="images/of.png">Add to Cart</button>
                     </div>
 
                   </div>
@@ -307,8 +355,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="2" data-name="Sunflower Oil" data-summary="summary 2" data-price="9.00"
-                        data-quantity="1" data-image="images/of1.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="2" data-name="Sunflower Oil"
+                        data-summary="summary 2" data-price="9.00" data-quantity="1" data-image="images/of1.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -333,8 +382,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00"
-                        data-quantity="1" data-image="images/of2.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana"
+                        data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -359,8 +409,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="4" data-name="Soya Chunks" data-summary="summary 4" data-price="3.50"
-                        data-quantity="1" data-image="images/of3.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="4" data-name="Soya Chunks"
+                        data-summary="summary 4" data-price="3.50" data-quantity="1" data-image="images/of3.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -385,8 +436,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b " data-id="1" data-name="Moong" data-summary="summary 1" data-price="1.50"
-                        data-quantity="1" data-image="images/of.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b " data-id="1" data-name="Moong" data-summary="summary 1"
+                        data-price="1.50" data-quantity="1" data-image="images/of.png">Add to Cart</button>
                     </div>
 
                   </div>
@@ -412,8 +463,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="2" data-name="Sunflower Oil" data-summary="summary 2" data-price="9.00"
-                        data-quantity="1" data-image="images/of1.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="2" data-name="Sunflower Oil"
+                        data-summary="summary 2" data-price="9.00" data-quantity="1" data-image="images/of1.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -438,8 +490,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00"
-                        data-quantity="1" data-image="images/of2.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana"
+                        data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -464,8 +517,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="4" data-name="Soya Chunks" data-summary="summary 4" data-price="3.50"
-                        data-quantity="1" data-image="images/of3.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="4" data-name="Soya Chunks"
+                        data-summary="summary 4" data-price="3.50" data-quantity="1" data-image="images/of3.png">Add to
+                        Cart</button>
                     </div>
                   </div>
                 </div>
@@ -505,8 +559,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="5" data-name="Lays" data-summary="summary 5" data-price="0.70"
-                        data-quantity="1" data-image="images/of4.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="5" data-name="Lays" data-summary="summary 5"
+                        data-price="0.70" data-quantity="1" data-image="images/of4.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -531,8 +585,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="6" data-name="Kurkure" data-summary="summary 6" data-price="0.70"
-                        data-quantity="1" data-image="images/of5.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="6" data-name="Kurkure" data-summary="summary 6"
+                        data-price="0.70" data-quantity="1" data-image="images/of5.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -557,8 +611,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="7" data-name="Popcorn" data-summary="summary 7" data-price="1.00"
-                        data-quantity="1" data-image="images/of6.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="7" data-name="Popcorn" data-summary="summary 7"
+                        data-price="1.00" data-quantity="1" data-image="images/of6.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -583,8 +637,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="8" data-name="Nuts" data-summary="summary 8" data-price="3.50"
-                        data-quantity="1" data-image="images/of7.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="8" data-name="Nuts" data-summary="summary 8"
+                        data-price="3.50" data-quantity="1" data-image="images/of7.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -624,8 +678,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="9" data-name="Banana" data-summary="summary 9" data-price="1.50"
-                        data-quantity="1" data-image="images/of8.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="9" data-name="Banana" data-summary="summary 9"
+                        data-price="1.50" data-quantity="1" data-image="images/of8.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -650,8 +704,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="10" data-name="Onion" data-summary="summary 10" data-price="0.70"
-                        data-quantity="1" data-image="images/of9.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="10" data-name="Onion" data-summary="summary 10"
+                        data-price="0.70" data-quantity="1" data-image="images/of9.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -676,8 +730,9 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="11" data-name="Bitter Gourd" data-summary="summary 11" data-price="1.00"
-                        data-quantity="1" data-image="images/of10.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="11" data-name="Bitter Gourd"
+                        data-summary="summary 11" data-price="1.00" data-quantity="1" data-image="images/of10.png">Add
+                        to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -702,8 +757,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="12" data-name="Apples" data-summary="summary 12" data-price="3.50"
-                        data-quantity="1" data-image="images/of11.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="12" data-name="Apples" data-summary="summary 12"
+                        data-price="3.50" data-quantity="1" data-image="images/of11.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -743,8 +798,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="13" data-name="Honey" data-summary="summary 13" data-price="6.00"
-                        data-quantity="1" data-image="images/of12.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="13" data-name="Honey" data-summary="summary 13"
+                        data-price="6.00" data-quantity="1" data-image="images/of12.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -769,8 +824,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="14" data-name="Chocos" data-summary="summary 14" data-price="4.50"
-                        data-quantity="1" data-image="images/of13.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="14" data-name="Chocos" data-summary="summary 14"
+                        data-price="4.50" data-quantity="1" data-image="images/of13.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -795,8 +850,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="15" data-name="Oats" data-summary="summary 15" data-price="3.50"
-                        data-quantity="1" data-image="images/of14.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="15" data-name="Oats" data-summary="summary 15"
+                        data-price="3.50" data-quantity="1" data-image="images/of14.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -821,8 +876,8 @@
                       <div class="clearfix"></div>
                     </div>
                     <div class="add">
-                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="16" data-name="Bread" data-summary="summary 16" data-price="0.80"
-                        data-quantity="1" data-image="images/of15.png">Add to Cart</button>
+                      <button class="btn btn-danger my-cart-btn my-cart-b" data-id="16" data-name="Bread" data-summary="summary 16"
+                        data-price="0.80" data-quantity="1" data-image="images/of15.png">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -922,43 +977,45 @@
   <!-- end carousel -->
 
   <!--footer-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-bottom">
-				<h2><a href="index.html"><b>T<br>H<br>E</b>FAMI C<span>The Best Supermarket</span></a></h2>
-				<p class="fo-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				<ul class="social-fo">
-					<li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-					<li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-				</ul>
-				<div class=" address">
-					<div class="col-md-4 fo-grid1">
-						<p><i class="fa fa-home" aria-hidden="true"></i>Ha Dong. Ha Noi. Viet Nam.</p>
-					</div>
-					<div class="col-md-4 fo-grid1">
-						<p><i class="fa fa-phone" aria-hidden="true"></i>+841692057613 , +841655673374</p>
-					</div>
-					<div class="col-md-4 fo-grid1">
-						<p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>thaolyno1@gmail.com</a></p>
-					</div>
-					<div class="clearfix"></div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <h2><a href="index.html"><b>T<br>H<br>E</b>FAMI C<span>The Best Supermarket</span></a></h2>
+        <p class="fo-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <ul class="social-fo">
+          <li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          <li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class=" address">
+          <div class="col-md-4 fo-grid1">
+            <p><i class="fa fa-home" aria-hidden="true"></i>Ha Dong. Ha Noi. Viet Nam.</p>
+          </div>
+          <div class="col-md-4 fo-grid1">
+            <p><i class="fa fa-phone" aria-hidden="true"></i>+841692057613 , +841655673374</p>
+          </div>
+          <div class="col-md-4 fo-grid1">
+            <p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>thaolyno1@gmail.com</a></p>
+          </div>
+          <div class="clearfix"></div>
 
-				</div>
-			</div>
-			<div class="copy-right">
-				<p> &copy; 2018 FAMI C Store. All Rights Reserved | Design by <a href="https://www.facebook.com/zenlili2412"> Nguyen Thao Ly</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- //footer-->
+        </div>
+      </div>
+      <div class="copy-right">
+        <p> &copy; 2018 FAMI C Store. All Rights Reserved | Design by <a href="https://www.facebook.com/zenlili2412">
+            Nguyen Thao Ly</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- //footer-->
 
 
   <!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function () {
+  <script type="text/javascript">
+    $(document).ready(function () {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -967,12 +1024,12 @@
 				easingType: 'linear' 
 				};
 			*/
-			$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+      $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+  </script>
+  <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
   <!-- //smooth scrolling -->
-  
+
   <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script> -->
   <!-- <script src="js/jquery.vide.min.js"></script> -->
 
