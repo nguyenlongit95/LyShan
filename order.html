@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAMI C:Order</title>
+
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+
+    <!--- start-rate---->
+    <script src="js/jstarbox.js"></script>
+    <link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery('.starbox').each(function () {
+                var starbox = jQuery(this);
+                starbox.starbox({
+                    average: starbox.attr('data-start-value'),
+                    changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
+                    ghosting: starbox.hasClass('ghosting'),
+                    autoUpdateAverage: starbox.hasClass('autoupdate'),
+                    buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
+                    stars: starbox.attr('data-star-count') || 5
+                }).bind('starbox-value-changed', function (event, value) {
+                    if (starbox.hasClass('random')) {
+                        var val = Math.random();
+                        starbox.next().text(' ' + val);
+                        return val;
+                    }
+                })
+            });
+        });
+    </script>
+    <!---//End-rate---->
+</head>
+
+<body>
+    <a href="order.html"><img src="images/download.png" class="img-head" alt=""></a>
+    <div class="header">
+        <div class="container">
+          <div class="logo">
+            <h1><a href="index.html"><b>T<br>H<br>E</b>FAMI C<span>The Best Supermarket</span></a></h1>
+          </div>
+    
+          <div class="head-t">
+            <ul class="card">
+              <li><a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Login</h4>
+                    </div>
+                    <div class="main-agileits">
+                      <div class="form-w3agile">
+                        <form action="#" method="post">
+                          <div class="key">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
+                              required="">
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="key">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+                              required="">
+                            <div class="clearfix"></div>
+                          </div>
+                          <input type="submit" value="Login">
+                        </form>
+                      </div>
+                      <div class="forg">
+                        <a href="#" class="forg-left">Forgot Password?</a>
+                        <a href="register.html" class="forg-right">Register</a>
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+              <li><a href="register.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Register</a></li>
+              <li><a href="about.html"><i class="fa fa-file-text-o" aria-hidden="true"></i>Our History Store</a></li>
+              <li><a href="index-VN.html"><i class="fa fa-ship" aria-hidden="true"></i>VietNamese</a></li>
+            </ul>
+          </div>
+    
+          <div class="header-ri">
+            <ul class="social-top">
+              <li><a href="#" class="icon facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a></li>
+              <li><a href="#" class="icon twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a></li>
+              <li><a href="#" class="icon pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i><span></span></a></li>
+              <li><a href="#" class="icon dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i><span></span></a></li>
+            </ul>
+          </div>
+    
+          <div class="nav-top">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+    
+              <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav ">
+                  <li class=" active"><a href="index.html" class="hyper "><span class="glyphicon glyphicon-home"></span>
+                      Home</a></li>
+                  <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle  hyper" data-toggle="dropdown"><span>Kitchen<b class="caret"></b></span></a>
+                    <ul class="dropdown-menu multi">
+                      <div class="row">
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Water &
+                                Beverages</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Fruits &
+                                Vegetables</a></li>
+                            <li><a href="product.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Staples</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Branded Food</a></li>
+                          </ul>
+                        </div>
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Breakfast &amp;
+                                Cereal</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Snacks</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Spices</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Biscuit &amp;
+                                Cookie</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sweets</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pickle &
+                                Condiment</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Instant Food</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Dry Fruit</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Tea &amp; Coffee</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3 w3l">
+                          <a href="product.html"><img src="images/me.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span> Personal Care <b class="caret"></b></span></a>
+                    <ul class="dropdown-menu multi multi1">
+                      <div class="row">
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Ayurvedic </a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Baby Care</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cosmetics</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Deo & Purfumes</a></li>
+                          </ul>
+                        </div>
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Hair Care </a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Oral Care</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Personal Hygiene</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Skin care</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Fashion
+                                Accessories
+                              </a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Grooming Tools</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Shaving Need</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Sanitary Needs</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3 w3l">
+                          <a href="product.html"><img src="images/me1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span>Household<b class="caret"></b></span></a>
+                    <ul class="dropdown-menu multi multi2">
+                      <div class="row">
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cleaning
+                                Accessories</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>CookWear</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Detergents</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Gardening Needs</a></li>
+                          </ul>
+                        </div>
+    
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Kitchen & Dining</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>KitchenWear</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pet Care</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Plastic Wear</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3">
+                          <ul class="multi-column-dropdown">
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Pooja Needs</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Serveware</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Safety Accessories</a></li>
+                            <li><a href="product.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Festive Decoratives
+                              </a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3 w3l">
+                          <a href="product.html"><img src="images/me2.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html" class="hyper"><span>Contact Us</span></a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="cart">
+              <span class="fa fa-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <h2><a href="index.html"><b>T<br>H<br>E</b>FAMI C<span>The Best Supermarket</span></a></h2>
+                <p class="fo-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                <ul class="social-fo">
+                    <li><a href="#" class=" face"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" twi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" pin"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class=" dri"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class=" address">
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-home" aria-hidden="true"></i>Ha Dong. Ha Noi. Viet Nam.</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>+841692057613 , +841655673374</p>
+                    </div>
+                    <div class="col-md-4 fo-grid1">
+                        <p><a href="mailto:info@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>thaolyno1@gmail.com</a></p>
+                    </div>
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+            <div class="copy-right">
+                <p> &copy; 2018 FAMI C Store. All Rights Reserved | Design by <a href="https://www.facebook.com/zenlili2412">
+                        Nguyen Thao Ly</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- //footer-->
+
+
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //smooth scrolling -->
+
+    <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script> -->
+    <!-- <script src="js/jquery.vide.min.js"></script> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/CustomJS.js"></script>
+</body>
+
+</html>

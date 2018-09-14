@@ -892,7 +892,7 @@ p.fo-para {
     background-size: cover;
 }
 .banner-top h3 {
-    font-size: 2.5em;
+    font-size: 2.1em;
     color: #fff;
     float: left;
     font-weight: 700;
@@ -959,4 +959,172 @@ p.fo-para {
     outline: none;
     width: 20%;
     cursor: pointer;
+}
+
+
+/* about.html */
+.about {
+    padding: 3em 0;
+}
+.spec {
+    text-align: center;
+    margin-bottom: 3em;
+}
+.spec h3 {
+    font-size: 3em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+.about-left p {
+    font-size: 1em;
+    color: #999;
+    line-height: 2em;
+    padding: 2em 0;
+}
+.work {
+    background: #F2F3F3;
+    padding: 1.5em 0;
+}
+.work h3 {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+}
+.spec-w3ls h3 {
+    color: #000;
+}
+.spec-w3ls span {
+    background: #F2F3F3;
+}
+.work-info {
+    position: relative;
+}
+.work-left {
+    text-align: right;
+    padding: 3em 3em 0 0;
+}
+.work-w3, .work-w31 {
+    background: #fff;
+    padding: 1em;
+}
+.work-info h5 {
+    font-size: 1.3em;
+    color: #000000;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+.work-info p {
+    font-size: 1em;
+    color: #999;
+    line-height: 2em;
+}
+.work-left label, .work-right label {
+    width: 10px;
+    height: 10px;
+    background: #FAB005;
+    border-radius: 100px;
+    position: absolute;
+    left: 40.4em;
+    top: 8em;
+    z-index: 9;
+}
+.work-right {
+    border-left: 1px solid #999;
+    padding: 13em 0 2em 4em;
+}
+.work-right label {
+    left: -0.4em;
+    top: 18em;
+}
+.work-info span {
+    font-size: 1.2em;
+    color: #fff;
+    background: #029241;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: 32.2em;
+}
+.advantages {
+    padding: 3em 0;
+}
+.advantages-left h3 {
+    font-size: 2.5em;
+    color: #000;
+}
+.advn-one {
+    margin-top: 2em;
+}
+.advn-two {
+    margin-top: 2em;
+}
+.ad-mian {
+    margin-top: 3%;
+}
+.ad-left {
+    width: 10%;
+    float: left;
+}
+.ad-left p {
+    color: #fff;
+    background: #029241;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    line-height: 2.5em;
+}
+.ad-right {
+    width: 84%;
+    float: right;
+}
+.ad-right p {
+    color: #7c7c7c;
+    font-size: 1em;
+    line-height: 1.9em;
+    margin-top: 8px;
+}
+.ad-right h4, .advn-two h4 {
+    font-size: 1.4em;
+}
+.ad-right h4 a, .advn-two h4 a {
+    text-decoration: none;
+    color: #FAB005;
+}
+.advn-two p {
+    color: #7c7c7c;
+    font-size: 1em;
+    line-height: 1.9em;
+    margin-top: 8px;
+}
+.advn-two ul {
+    margin-top: 3%;
+}
+.advn-two ul li {
+    list-style: none;
+}
+.advn-two ul li a {
+    color: #7c7c7c;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0.8em 0;
+    display: block;
+}
+.advn-two ul li a i {
+    margin-right: 2%;
 }
