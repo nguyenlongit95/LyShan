@@ -1357,7 +1357,6 @@ a.at-in {
     width: 60%;
 }
 .sed h5 {
-    color: #FAB005;
     font-size: 15px;
     margin-top: 3em;
 }
@@ -1467,4 +1466,40 @@ td.t-data1 {
     color: #000;
     vertical-align: middle !important;
     font-size: 1em !important;
+}
+.info-pm{
+    padding-bottom: 2em;
+}
+.info {
+    border: none;
+    padding: 9px 0;
+    width: 22%;
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    background: #029241;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -webkit-appearance: none;
+}
+.info:hover{
+    background: #FAB005;
+}
+
+/* product.html */
+.content-pr{
+    margin-top: 3em;
+}
+.pr-left{
+    float: left;
+    margin-left: 2em;
+}
+.pr-right{
+    float: right;
+    margin-right: 3em;
 }
