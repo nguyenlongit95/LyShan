@@ -569,6 +569,13 @@ p, label {
 .mid-1 h6 {
     font-size: 1.2em;
 }
+.mid-1 h6:hover {
+    color: #FAB005;
+}
+.mid-1 h6 a:hover {
+    color: #FAB005;
+    text-decoration: none;
+}
 .mid-1 h6 a {
     color: #000000;
     text-decoration: none;
@@ -1497,9 +1504,261 @@ td.t-data1 {
 }
 .pr-left{
     float: left;
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 .pr-right{
+    color: #FAB005;
     float: right;
     margin-right: 3em;
+}
+.pr-left a{
+    color:  #029241;
+    font-weight: bold;
+}
+.pr-left .active{
+    color: #FAB005;
+}
+
+/* slider-product */
+.content-bottom-pr{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.panel-heading:hover {
+    cursor:pointer;
+}
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+.side-tab:hover {
+        cursor: pointer;
+    }
+    .panel.panel-default {
+        border: none;
+        box-shadow: none !important;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        
+    }
+    .panel-heading {
+        border: none;
+        background-color: #eee;
+    
+    }
+    .panel-body {
+        background-color: #f5f5f5;
+    }
+    .panel-title {
+        font-weight: 400;
+        color: $white;
+    }
+
+
+.md-macbook-pro {
+  display: block;
+  width: 55.3125em;
+  height: 31.875em;
+  font-size: 13px;
+  margin: 0 auto;
+
+  @media (max-width:1199px){
+    font-size: 11px;
+  }
+  @media (max-width:1024px){
+    font-size: 10px;
+  }
+
+  @media (max-width:767px){
+    font-size: 7px;
+  }
+
+  @media (max-width:320px){
+    font-size: 5px;
+  }
+
+}
+.md-macbook-pro .md-lid {
+  width: 45em;
+  height: 30.625em;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1.875em;
+  border: solid 0.1875em #cdced1;
+  background: #131313;
+}
+.md-macbook-pro .md-camera {
+  width: 0.375em;
+  height: 0.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 1.0625em;
+  background: #000;
+  border-radius: 100%;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+.md-macbook-pro .md-camera:after {
+  content: "";
+  display: block;
+  width: 0.125em;
+  height: 0.125em;
+  position: absolute;
+  left: 0.125em;
+  top: 0.0625em;
+  background: #353542;
+  border-radius: 100%;
+}
+.md-macbook-pro .md-screen {
+  width: 42.25em;
+  height: 26.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 2.0625em;
+  // background: #1d1d1d;
+  background: #fff;
+  overflow: hidden;
+}
+.md-macbook-pro .md-screen img {
+  width: 100%;
+}
+.md-macbook-pro .md-base {
+  width: 100%;
+  height: 0.9375em;
+  position: relative;
+  top: -0.75em;
+  background: #c6c7ca;
+}
+.md-macbook-pro .md-base:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5em;
+  margin: 0 auto;
+  position: relative;
+  bottom: -0.1875em;
+  background: #b9babe;
+  border-radius: 0 0 1.25em 1.25em;
+}
+.md-macbook-pro .md-base:before {
+  content: "";
+  display: block;
+  width: 7.6875em;
+  height: 0.625em;
+  margin: 0 auto;
+  position: relative;
+  background: #a6a8ad;
+  border-radius: 0 0 0.625em 0.625em;
+}
+.md-macbook-pro.md-glare .md-lid:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 1.25em 0 0;
+  background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+}
+
+/* single.html */
+.single {
+    padding: 5em 0 0;
+}
+.single-w3agile {
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    padding: 2em;
+}
+#picture-frame{
+    position: relative;
+    overflow: hidden;
+    cursor: crosshair;
+}
+.single-w3agile img {
+    margin: 0 auto;
+}
+.single-right h3 {
+    color: #000;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.pr-single {
+    padding-bottom: 1em;
+}
+.reduced {
+    color: #FC6914;
+    font-size: 1em;
+    margin-top: 1em;
+}
+.reduced del {
+    margin-right: 2%;
+    color: #62BF43;
+    font-size: 0.9em;
+}
+.block-w3 {
+    float: none;
+}
+p.in-pa {
+    color: #999;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 1em 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1em 0;
+}
+.add-3 {
+    margin-top: 0.5em;
+    text-align: left;
+}
+     .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.slider-sg{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.card-img img{
+    width: 268px;
+    height: 178px;
+    margin-bottom: 1em;
+}
+.card1{
+    border: 1px solid #ccc;
+}
+.card-body h5, h4{
+    margin-bottom: 1em;
+}
+.card-body button{
+    margin-bottom: 1em;
+}
+.card-body button:hover{
+    background-color: #FAB005;
 }
